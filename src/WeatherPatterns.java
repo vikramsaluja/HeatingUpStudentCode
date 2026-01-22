@@ -15,7 +15,9 @@ public class WeatherPatterns {
     public static int longestWarmingTrend(int[] temperatures) {
 
         // Edge case so if there are no days, then that mean there is no warming trend
-        if (temperatures == null || temperatures.length == 0) return 0;
+        if (temperatures == null || temperatures.length == 0) {
+            return 0;
+        }
 
 
         int numDays = temperatures.length;
